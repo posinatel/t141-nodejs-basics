@@ -1,0 +1,6 @@
+{
+  "name": "nodejs-http-server",
+  "scripts": {
+    "start": "node server"
+  }
+}
