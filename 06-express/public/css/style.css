@@ -1,0 +1,11 @@
+/* CSS Document */
+
+.subscriber {
+    width: 600px;
+    margin: 20px auto;
+}
+
+#tb-subscriber .btn {
+    margin-right: 4px;
+}
+
