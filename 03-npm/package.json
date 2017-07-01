@@ -1,0 +1,19 @@
+{
+  "name": "03-npm",
+  "version": "1.0.0",
+  "description": "Learning NPM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "NPM",
+    "Nodejs"
+  ],
+  "author": "Inatel",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "useful-string": "0.0.2"
+  }
+}
