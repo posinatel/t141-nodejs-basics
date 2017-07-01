@@ -1,17 +1,21 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const {host, port} = require('./config.js')
 
+//setup
 const app = express()
 app.use(bodyParser.json())
-app.use(express.static('../public'))
+app.use(express.static('public'))
 
+//welcome
 app.get('/', (request, response) => {
-    response.send("Hi there!")
+    response.redirect('./index.html')
 })
 
-const host = process.env.npm_package_config_host || "localhost"
-const port = process.env.npm_package_config_port || 9000
+//subscriber API
+app.use('/api/subscribers', require('./subscriberApi'))
 
+//server startup
 app.listen(port, () => {
     console.log(`Server started at http://${host}:${port}`)
 })
